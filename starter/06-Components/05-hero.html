@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ominifood Hero Section</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,700&display=swap');
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			html {
+				font-family: 'Rubik', sans-serif;
+				color: #444;
+			}
+
+			.container {
+				width: 1200px;
+				margin: 0 auto;
+			}
+
+			header {
+				height: 100vh;
+				position: relative;
+				color: #fff;
+				background: linear-gradient(
+						rgb(34, 34, 34, 0.6),
+						rgb(34, 34, 34, 0.6)
+					),
+					url(hero.jpg) 0 0 / cover;
+
+				/* o código abaixo não funciona, a cor sempre fica por tras da imagem */
+				/* por isso é necessário usar um gradient (ele age como uma imagem) */
+				/*
+                background-color: rgb(34, 34, 34, 0.6);
+				background-image: url(hero.jpg);
+				*/
+			}
+
+			nav {
+				display: flex;
+				justify-content: space-between;
+				font-size: 20px;
+				font-weight: 700;
+				padding-top: 32px;
+			}
+
+			.header-container {
+				width: 1200px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			.header-container-inner {
+				width: 50%;
+			}
+
+			h1 {
+				font-size: 52px;
+				margin-bottom: 32px;
+				line-height: 1.05;
+			}
+
+			p {
+				font-size: 20px;
+				line-height: 1.6;
+				margin-bottom: 48px;
+			}
+
+			.btn:link,
+			.btn:visited {
+				display: inline-block;
+				font-size: 20px;
+				font-weight: 600;
+				background-color: #e67e22;
+				color: #fff;
+				text-decoration: none;
+				padding: 16px 32px;
+				border-radius: 9px;
+			}
+
+			h2 {
+				font-size: 44px;
+				margin-bottom: 48px;
+			}
+
+			section {
+				padding: 96px;
+				background: #f7f7f7;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav class="container">
+				<div>Logo</div>
+				<div class="">navigation</div>
+			</nav>
+
+			<div class="header-container">
+				<div class="header-container-inner">
+					<h1>
+						A healthy meal delivered to your door, every single day
+					</h1>
+					<p>
+						The smart 365-days-per-year food subscription that will
+						make you eat healthy again. Tailored your personal
+						tastes and nutritional needs.
+					</p>
+					<a href="#" class="btn">Start eating well</a>
+				</div>
+			</div>
+		</header>
+		<section class="container">
+			<h2>Some random heading</h2>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
+				odit, atque nesciunt recusandae aliquid neque similique iste
+				ipsa, officiis culpa accusantium excepturi earum doloremque,
+				molestiae temporibus aperiam maiores sit quibusdam! Laboriosam,
+				quam illum. Illo optio ea libero eum dicta tenetur expedita
+				incidunt odio dolores ipsum rem sunt nulla saepe dolorum omnis
+				consectetur animi repellat, iusto ut aliquid amet aperiam atque?
+			</p>
+		</section>
+	</body>
+</html>
